@@ -14,6 +14,14 @@ modelCharacter(db);
 modelAbility(db);
 modelRole(db);
 
+// modelCharacter.hasMany(modelAbility);
+// modelAbility.belongsTo(modelCharacter);
+
+// modelCharacter.belongsToMany(modelRole, {through: "characterRole"});
+// modelRole.belongsToMany(modelCharacter, {through: "characterRole"});
+
+
+
 module.exports = {
    ...db.models,
    db,
